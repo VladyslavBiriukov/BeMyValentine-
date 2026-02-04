@@ -42,7 +42,11 @@ yesBtn.addEventListener("click", () => {
 
     catImg.src = "cat-love.gif";
 
-    catImg.style.width = "400px";
+    if (window.innerWidth <= 480) {
+        catImg.style.width = "120px"; // мобильные
+    } else {
+        catImg.style.width = "400px"; // десктоп
+    }
 
     document.querySelector(".letter-window").classList.add("final");
 
