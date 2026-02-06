@@ -43,7 +43,7 @@ yesBtn.addEventListener("click", () => {
     catImg.src = "cat-love.gif";
 
     if (window.innerWidth <= 480) {
-        catImg.style.width = "120px"; // мобильные
+        catImg.style.width = "200px"; // мобильные
     } else {
         catImg.style.width = "400px"; // десктоп
     }
