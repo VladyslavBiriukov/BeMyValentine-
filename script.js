@@ -39,6 +39,9 @@ noBtn.addEventListener("mouseover", () => {
 
 yesBtn.addEventListener("click", () => {
     title.textContent = "Я щасливий!";
+    const audio = document.getElementById("love-audio");
+audio.volume = 0.8; // можно убрать или поменять
+audio.play();
 
     catImg.src = "cat-love.gif";
 
